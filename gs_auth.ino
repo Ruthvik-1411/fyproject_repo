@@ -11,44 +11,49 @@
 #define RST_PIN D0//9
 
 //-->Wifi ssid,password,mess and id
-const char* ssid = "DONTCONNECT";
-const char* password = "itoldyounot2";
+const char* ssid = "xx";
+const char* password = "xx";
 const String mess="B";
 String ID="";
 String roll="";
 //--> Cards Database
-String mydb[25][2]={
-  {"30 55 B4 D4","B190001EE"},
-  {"10 34 6A D4","B190002EE"},
-  {"70 BA 68 D4","B190003EE"},
-  {"80 29 A9 D4","B190004EE"},
-  {"90 34 AF D4","B190005EE"},
-  {"E0 F2 62 D4","B190006EE"},
-  {"10 2A B0 D4","B190007EE"},
-  {"30 79 AB D4","B190008EE"},
-  {"80 75 5A D4","B190009EE"},
-  {"F0 D0 AE D4","B190010EE"},
-  {"70 94 A9 D4","B190011EE"},
-  {"20 59 5A D4","B190012EE"},
-  {"20 89 5A D4","B190013EE"},
-  {"E0 49 AE D4","B190014EE"},
-  {"40 A0 74 D4","B190015EE"},
-  {"90 DA 6D D4","B190016EE"},
-  {"A0 46 62 D4","B190017EE"},
-  {"50 86 B2 D4","B190018EE"},
-  {"B0 30 BA D4","B190019EE"},
-  {"D0 6D A9 D4","B190020EE"},
-  {"10 91 D9 70","B190021EE"},
-  {"40 24 C1 70","B190022EE"},
-  {"E0 D6 C9 70","B190023EE"},
-  {"90 42 C0 70","B190024EE"},
-  {"F0 2E BA 70","B190025EE"} 
+String mydb[30][2]={
+  {"30 55 B4 D4","B180476EE"},
+  {"10 34 6A D4","B180552CH"},
+  {"70 BA 68 D4","B180782EE"},
+  {"80 29 A9 D4","B181112BT"},
+  {"90 34 AF D4","B190007ME"},
+  {"E0 F2 62 D4","B190221ME"},
+  {"10 2A B0 D4","B190342PE"},
+  {"30 79 AB D4","B190445CS"},
+  {"80 75 5A D4","B190453CE"},
+  {"F0 D0 AE D4","B190462ME"},
+  {"70 94 A9 D4","B200476EE"},
+  {"20 59 5A D4","B200876ME"},
+  {"20 89 5A D4","B210974CE"},
+  {"E0 49 AE D4","M170220CE"},
+  {"40 A0 74 D4","M170229EC"},
+  {"90 DA 6D D4","M170404CE"},
+  {"A0 46 62 D4","M170479EE"},
+  {"50 86 B2 D4","M170689EE"},
+  {"B0 30 BA D4","M180151CS"},
+  {"D0 6D A9 D4","M181001EE"},
+  {"10 91 D9 70","M190111CS"},
+  {"40 24 C1 70","P170452CS"},
+  {"E0 D6 C9 70","P170555EC"},
+  {"90 42 C0 70","P170661CE"},
+  {"F0 2E BA 70","P190881EE"},
+  {"F5 51 8F AC","20010226E"},//1 card
+  {"55 68 AA AC","20180105E"},//2 card
+  {"AD 58 6C 20","20180426E"},//3 key
+  {"B5 61 AE AC","20200224E"},//4 card
+  {"BD C8 FD 31","20200306E"}//5 key
 };
 
 //Host & httpsPort
 const char* host = "script.google.com";
 const int httpsPort = 443;
-String GAS_ID = "AKfycbwAhqTXT0mgnyyMJyXBRlD1AvVtUVN3cactkKZAJqPRMc6bPu2zwVTJAeGqG_fDlNAS";
+String GAS_ID = "xxxx";
 
 WiFiClientSecure client;
 MFRC522 my_mfrc522(SS_PIN, RST_PIN);
