@@ -4,9 +4,11 @@
     <base target="_top">
   </head>
   <body>
-    <p> Dear<?= ID ?>,</p>
-    <p>We received a scan for your dining on the date : <?= Date ?> at <?=Time?> at the <?=Mess?> mess. The details of your dining have been entered.
+    <p> Dear <?= user.roll_id ?>,</p>
+    <p>We received a scan for your dining on the date : <?= user.datetime ?> at the <?= user.mess_id ?> mess.<br> The details of your dining have been entered.
   </p>
   <p>Thank you,<br>NITCAMS</p>
+  <p>In case of any mistakes, please contact Mess Affairs Section,Hostel Office,<br> <a href="mailto:amsadmin@gmail.com">amsadmin@gmail.com</a>
   </body>
 </html>
+
